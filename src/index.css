@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-kfc-red: #E4002B;
+  --color-kfc-black: #1A1A1A;
+  --color-kfc-gold: #F4A020;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-kfc-black;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display uppercase tracking-tight;
+  }
+}
+
+.kfc-button {
+  @apply bg-kfc-red text-white font-display uppercase px-8 py-3 rounded-full hover:opacity-90 transition-all active:scale-95;
+}
+
+.kfc-card {
+  @apply bg-white rounded-2xl shadow-md overflow-hidden border border-black/5;
+}

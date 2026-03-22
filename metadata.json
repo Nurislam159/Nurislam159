@@ -1,0 +1,5 @@
+{
+  "name": "KFC - Finger Lickin' Good",
+  "description": "High-converting KFC-inspired fast food ordering platform with AI-powered assistance and personalized deals.",
+  "requestFramePermissions": ["geolocation"]
+}
